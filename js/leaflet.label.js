@@ -5,7 +5,7 @@
 			autoPan:!1,
 			className:"",
 			closePopupOnClick:!1,
-			noHide:!1,
+			noHide: !1,
 			offset:new L.Point(12,-15),
 			opacity:1
 		},
