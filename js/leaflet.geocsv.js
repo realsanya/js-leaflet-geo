@@ -95,7 +95,7 @@ L.GeoCSV = L.GeoJSON.extend({
         var campos = csv[num_linea].trim().split(this.options.fieldSeparator)
           , lng = parseFloat(campos[titulos.indexOf('lng')])
           , lat = parseFloat(campos[titulos.indexOf('lat')]);
-        if (campos.length==titulos.length && lng<180 && lng>-180 && lat<90 && lat>-90 && campos[0] === 'park') {
+        if (campos.length==titulos.length && lng<180 && lng>-180 && lat<90 && lat>-90 && (campos[0] === 'convenience' || campos[0] === 'supermarket')) {
           var feature = {};
           feature["type"]="Feature";
           feature["geometry"]={};
